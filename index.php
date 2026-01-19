@@ -4,7 +4,7 @@ $profileImage = "xyz.png";
 function validimage($profileImage){
     $imgArray = explode('.',$profileImage);
     //  print_r($imgArray);
-    if($imgArray== "png" || $imgArray =="jpg"){
+    if(end($imgArray)== "png" || end($imgArray) =="jpg"){
         print_r("valid Image");
     }
     else{
